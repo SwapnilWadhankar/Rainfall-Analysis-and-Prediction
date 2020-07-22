@@ -1,0 +1,138 @@
+<div class="accordion py-5" id="accordionExample">
+                                        <div class="card">
+                                          <div class="card-header" id="headingOne">
+                                            <h2 class="mb-0">
+                                              <button class="btn btn-link d-inline" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                               Asia
+                                              </button>
+                                            </h2>
+                                          </div>
+                                      
+                                          <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                                            <div class="card-body">
+                                            <?php
+                                            $asian_country = "SELECT * from asia";
+                                            $countries = mysqli_query($connection, $asian_country);
+                                            while($row = mysqli_fetch_assoc($countries))
+                                                  {
+                                                    $country_list = $row['Countries'];
+                                                    echo "<li class=' list-inline-item'><a href='#' style='color:black;text-decoration:none'>{$country_list}</a></li>";
+                                                  }
+                                            ?>
+                                            </div>
+                                          </div>
+                                        </div>
+
+
+                                        <div class="card">
+                                          <div class="card-header" id="headingTwo">
+                                            <h2 class="mb-0">
+                                              <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                              Africa
+                                              </button>
+                                            </h2>
+                                          </div>
+                                          <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                                            <div class="card-body">
+                                            <?php
+                                            $african_country = "SELECT * from africa";
+                                            $countries = mysqli_query($connection, $african_country);
+                                            while($row = mysqli_fetch_assoc($countries))
+                                                  {
+                                                    $country_list = $row['Countries'];
+                                                    echo "<li class=' list-inline-item'><a href='#' style='color:black;text-decoration:none'>{$country_list}</a></li>";
+                                                  }
+                                            ?>   
+                                            </div>
+                                          </div>
+                                        </div>
+
+
+                                        <div class="card">
+                                          <div class="card-header" id="headingThree">
+                                            <h2 class="mb-0">
+                                              <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                                Europe
+                                              </button>
+                                            </h2>
+                                          </div>
+                                          <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                                            <div class="card-body">
+                                            <?php
+                                            $european_country = "SELECT * from europe";
+                                            $countries = mysqli_query($connection, $european_country);
+                                            while($row = mysqli_fetch_assoc($countries))
+                                                  {
+                                                    $country_list = $row['Countries'];
+                                                    echo "<li class=' list-inline-item'><a href='#' style='color:black;text-decoration:none'>{$country_list}</a></li>";
+                                                  }
+                                            ?>
+                                            </div>
+                                          </div>
+                                        </div>
+
+                                        <div class="card">
+                                          <div class="card-header" id="headingThree">
+                                            <h2 class="mb-0">
+                                              <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                                Europe
+                                              </button>
+                                            </h2>
+                                          </div>
+                                          <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                                            <div class="card-body">
+                                            <?php
+                                            $european_country = "SELECT * from europe";
+                                            $countries = mysqli_query($connection, $european_country);
+                                            while($row = mysqli_fetch_assoc($countries))
+                                                  {
+                                                    $country_list = $row['Countries'];
+                                                    echo "<li class=' list-inline-item'><a href='#' style='color:black;text-decoration:none'>{$country_list}</a></li>";
+                                                  }
+                                            ?>   
+                                            </div>
+                                          </div>
+                                        </div>
+
+                                        <div class="card">
+                                          <div class="card-header" id="headingThree">
+                                            <h2 class="mb-0">
+                                              <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                                Collapsible Group Item #3
+                                              </button>
+                                            </h2>
+                                          </div>
+                                          <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                                            <div class="card-body">
+                                            
+                                            </div>
+                                          </div>
+                                        </div>
+
+                                        <div class="card">
+                                          <div class="card-header" id="headingThree">
+                                            <h2 class="mb-0">
+                                              <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                                Collapsible Group Item #3
+                                              </button>
+                                            </h2>
+                                          </div>
+                                          <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                                            <div class="card-body">
+                                            
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+
+
+                                    
+                                    
+
+
+                                    
+
+
+
+
+                                </div>
