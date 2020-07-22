@@ -30,8 +30,5 @@ window.onload = function () {
     chart.render();
   }
 
-  $.getJSON(
-    'https://canvasjs.com/data/gallery/javascript/daily-sales-data.json',
-    addData
-  );
+  $.getJSON('./includes/data.json', addData);
 };
