@@ -177,9 +177,15 @@ html {
 
 #chartContainer {
   height: 370px;
-  width: 600px;
+  width: 900px;
   position: relative;
-  margin-left: 420px;
-  padding-top: 120px;
+  margin-left: 300px;
+  padding-top: 100px;
   padding-bottom: 30px;
+}
+
+#m-booked-bl-simple-58519 {
+  position: relative;
+  padding-top: 50px;
+  margin-left: -50px;
 }

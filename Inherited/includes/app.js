@@ -29,6 +29,9 @@ window.onload = function () {
     }
     chart.render();
   }
+  const hello = new Date(1238540400000);
+  const helloo = JSON.stringify(hello);
+  console.log(helloo);
 
   $.getJSON('./includes/data.json', addData);
 };
